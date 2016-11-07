@@ -28,7 +28,7 @@ curl "$REMOTE_ROOT/assets/colors/vim-colors-solarized/doc/togglebg.txt" > ~/.vim
 curl "$REMOTE_ROOT/assets/colors/vim-colors-solarized/README.mkd" > ~/.vim/bundle/vim-colors-solarized/README.mkd
 
 echo "Setting dir colors.."
-sudo curl "$REMOTE_ROOT/assets/colors/dircolors.256dark" > /etc/dircolors.256dark
+sudo curl "$REMOTE_ROOT/assets/colors/dircolors.256dark" > ~/.dircolors.256dark
 
 echo "Setting vimrc.."
 cat ~/.vimrc > ~/.vimrc.bak
@@ -43,7 +43,7 @@ echo "Setting bashrc.."
 cat ~/.bashrc > ~/.bashrc.bak
 appendLine ~/.bashrc "export TERM=xterm-256color"
 appendLine ~/.bashrc "export LS_OPTIONS='--color=auto'"
-appendLine ~/.bashrc "eval `dircolors /etc/dircolors.256dark`"
+appendLine ~/.bashrc "eval `dircolors ~/.dircolors.256dark`"
 appendLine ~/.bashrc "alias ls='ls \$LS_OPTIONS'"
 appendLine ~/.bashrc "alias ll='ls \$LS_OPTIONS -l'"
 appendLine ~/.bashrc "alias l='ls \$LS_OPTIONS -lA'"
