@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Debian 8 Base Setup & Colors"
+
 function appendLine {
     FILE=$1
     LINE=$2
