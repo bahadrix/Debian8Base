@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 echo "Debian 8 Base Setup & Colors"
 
 function appendLine {
@@ -29,7 +28,7 @@ curl "$REMOTE_ROOT/assets/colors/vim-colors-solarized/doc/togglebg.txt" > ~/.vim
 curl "$REMOTE_ROOT/assets/colors/vim-colors-solarized/README.mkd" > ~/.vim/bundle/vim-colors-solarized/README.mkd
 
 echo "Setting dir colors.."
-curl "$REMOTE_ROOT/assets/colors/dircolors.256dark" > /etc/dircolors.256dark
+sudo curl "$REMOTE_ROOT/assets/colors/dircolors.256dark" > /etc/dircolors.256dark
 
 echo "Setting vimrc.."
 cat ~/.vimrc > ~/.vimrc.bak
