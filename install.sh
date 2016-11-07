@@ -43,7 +43,7 @@ echo "Setting bashrc.."
 cat ~/.bashrc > ~/.bashrc.bak
 appendLine ~/.bashrc "export TERM=xterm-256color"
 appendLine ~/.bashrc "export LS_OPTIONS='--color=auto'"
-appendLine ~/.bashrc "eval `dircolors ~/.dircolors.256dark`"
+appendLine ~/.bashrc "eval \`dircolors ~/.dircolors.256dark\`"
 appendLine ~/.bashrc "alias ls='ls \$LS_OPTIONS'"
 appendLine ~/.bashrc "alias ll='ls \$LS_OPTIONS -l'"
 appendLine ~/.bashrc "alias l='ls \$LS_OPTIONS -lA'"
