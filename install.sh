@@ -8,8 +8,6 @@ function appendLine {
 
 REMOTE_ROOT="https://raw.githubusercontent.com/bahadrix/Debian8Base/master"
 
-sudo apt-get install -y curl
-
 echo "Creating directories"
 
 mkdir -p  ~/.vim/autoload
